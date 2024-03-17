@@ -1,0 +1,78 @@
+PS C:\Users\DELL\Documents\typescript> npm init -y
+Wrote to C:\Users\DELL\Documents\typescript\package.json:
+
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
+
+
+PS C:\Users\DELL\Documents\typescript> npm i typesript -save-dev
+npm ERR! code E404
+npm ERR! 404 Not Found - GET https://registry.npmjs.org/typesript - Not found
+npm ERR! 404 
+npm ERR! 404  'typesript@*' is not in this registry.
+npm ERR! 404
+npm ERR! 404 Note that you can also install from a
+npm ERR! 404 tarball, folder, http url, or git url.
+
+npm ERR! A complete log of this run can be found in: C:\Users\DELL\AppData\Local\npm-cache\_logs\2024-03-04T03_41_51_483Z-debug-0.log
+PS C:\Users\DELL\Documents\typescript> npm i typescript -save-dev
+
+added 1 package, and audited 2 packages in 4s
+
+found 0 vulnerabilities
+PS C:\Users\DELL\Documents\typescript> npm i @types/node --save-dev
+
+added 2 packages, and audited 4 packages in 3s
+
+found 0 vulnerabilities
+PS C:\Users\DELL\Documents\typescript> npx tsc --init
+
+Created a new tsconfig.json with:                                                                                       
+                                                                                                                     TS 
+  target: es2016
+  module: commonjs
+  strict: true
+  esModuleInterop: true
+  skipLibCheck: true
+  forceConsistentCasingInFileNames: true
+
+
+You can learn more at https://aka.ms/tsconfig
+PS C:\Users\DELL\Documents\typescript> npx tsx
+Need to install the following packages:
+tsx@4.7.1
+Ok to proceed? (y) y
+Welcome to Node.js v18.18.0.      
+Type ".help" for more information.
+
+
+
+
+
+'npx tsc' to convert ts code into js code(transpilation)
+
+
+
+primitive datatypes
+any, string, number, boolean, null and undefined, unknown, never
+
+combined datatypes
+enum, array, interface and type,
+
+array
+map, filter, reduce
+
+
+
+
+
+
+

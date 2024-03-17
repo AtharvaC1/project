@@ -1,0 +1,184 @@
+Microsoft Windows [Version 10.0.19045.3570]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\DELL>git --version
+git version 2.39.1.windows.1
+
+C:\Users\DELL>git clone https://github.com/alibharmal/game_grid_backend.git
+Cloning into 'game_grid_backend'...
+info: please complete authentication in your browser...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+C:\Users\DELL>cd game_grid_backend
+
+C:\Users\DELL\game_grid_backend>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\DELL\game_grid_backend>
+
+
+
+
+
+git status
+git branch - list of branches
+git branch name
+git checkout name - go from one branch to another
+git add file_name
+git commit -m "any_msg"
+git push
+git diff - to know changes in files
+git checkout file_name
+git pull
+git restore --staged file_name
+git reset --soft HEAD^
+
+
+
+
+
+
+PS C:\Users\DELL\game_grid_frontend> git branch atharva
+PS C:\Users\DELL\game_grid_frontend> git checkout atharva
+Switched to branch 'atharva'
+PS C:\Users\DELL\game_grid_frontend> git status
+On branch atharva
+  (use "git add <file>..." to include in what will be committed)
+        package-lock.json
+        public/
+        src/
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\DELL\game_grid_frontend> git push --set-upstream origin atharva
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'atharva' on GitHub by visiting:
+remote:      https://github.com/alibharmal/game_grid_frontend/pull/new/atharva
+remote:
+To https://github.com/alibharmal/game_grid_frontend.git
+ * [new branch]      atharva -> atharva
+PS C:\Users\DELL\game_grid_frontend> git push
+Everything up-to-date
+PS C:\Users\DELL\game_grid_frontend> git checkout 
+Your branch is up to date with 'origin/atharva'.
+PS C:\Users\DELL\game_grid_frontend> git checkout atharva
+Already on 'atharva'
+Your branch is up to date with 'origin/atharva'.
+PS C:\Users\DELL\game_grid_frontend> git add -A
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'public/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'public/manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/reportWebVitals.js', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\DELL\game_grid_frontend> git commit -m "committed"     
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Atharva@DESKTOP-2BH9213.(none)')
+PS C:\Users\DELL\game_grid_frontend> git config --global user.email "atharva.anupama@gmail.com"
+PS C:\Users\DELL\game_grid_frontend> git config --global user.name "AtharvaC1"
+PS C:\Users\DELL\game_grid_frontend> git commit -m "committed"
+[atharva 88d2c0c] committed
+ 47 files changed, 19684 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/images/badminton-concept-with-dramatic-lighting.jpg
+ create mode 100644 public/images/bd1.jpg
+ create mode 100644 public/images/bd2.jpg
+ create mode 100644 public/images/chino-rocha-2FKTyJqfWX8-unsplash.jpg
+ create mode 100644 public/images/email.png
+ create mode 100644 public/images/erik-mclean--PkEytgjLm0-unsplash.jpg
+ create mode 100644 public/images/fans.png
+ create mode 100644 public/images/gamegrid-low-resolution-logo-transparent.png
+ create mode 100644 public/images/heart.png
+ create mode 100644 public/images/location.png
+ create mode 100644 public/images/network.png
+ create mode 100644 public/images/phone-call.png
+ create mode 100644 public/images/send.png
+ create mode 100644 public/images/sports.png
+ create mode 100644 public/index.html
+ create mode 100644 public/logo192.png
+ create mode 100644 public/logo512.png
+ create mode 100644 public/manifest.json
+ create mode 100644 public/robots.txt
+ create mode 100644 public/videos/vid1.mp4
+ create mode 100644 public/videos/vid2.mp4
+ create mode 100644 src/App.css
+ create mode 100644 src/App.js
+ create mode 100644 src/components/Button.css
+ create mode 100644 src/components/Button.js
+ create mode 100644 src/components/Cards.css
+ create mode 100644 src/components/Cards.js
+ create mode 100644 src/components/Footer.css
+ create mode 100644 src/components/Footer.js
+ create mode 100644 src/components/HeroSection.css
+ create mode 100644 src/components/HeroSection.js
+ create mode 100644 src/components/Navbar.css
+ create mode 100644 src/components/Navbar.js
+ create mode 100644 src/components/pages/AboutUs.js
+ create mode 100644 src/components/pages/Home.js
+ create mode 100644 src/components/pages/Login.js
+ create mode 100644 src/components/pages/Pricing.js
+ create mode 100644 src/components/pages/Signup.js
+ create mode 100644 src/components/pages/Tournaments.js
+ create mode 100644 src/components/pages/loginsignup.css
+ create mode 100644 src/index.js
+ create mode 100644 src/reportWebVitals.js
+PS C:\Users\DELL\game_grid_frontend> git push origin atharva
+Enumerating objects: 56, done.
+Counting objects: 100% (56/56), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (55/55), done.
+Writing objects: 100% (55/55), 26.61 MiB | 166.00 KiB/s, done.
+Total 55 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/alibharmal/game_grid_frontend.git
+   4f66044..88d2c0c  atharva -> atharva
+PS C:\Users\DELL\game_grid_frontend>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#23e8ad
+#11bc88

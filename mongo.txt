@@ -1,0 +1,50 @@
+insertOne()
+insertMany()
+
+updateOne()
+updateMany()
+
+findOne()
+find()
+
+
+db.getCollection("employee").find({}, {_id: 0, name: 1})
+0 means not to show and 1 means show
+
+db.getCollection("employee").find({salary: {$gt: 50000}})  //greater than 50000
+db.getCollection("employee").find({salary: {$lt: 50000}})  //less than 50000
+
+$gte  //greater than equal to
+$lte  //less than equal to
+$ne  //not equal to
+
+db.getCollection("employee").find({name: {$in: ['George', 'Jack']}})  //to find records whose name is either of the one
+
+$nin  //records not in 
+
+count() //counts no of records
+db.getCollection("employee").find({}).count()
+
+skip() and limit()
+db.getCollection("employee").find().skip(1).limiy(2)  //skips the 1st record and limits the others to 2
+
+sort()
+db.getCollection("employee").find().sort({salary: 1}) //sorts by the salary
+db.getCollection("employee").find().sort({salary: -1}) //descending order
+
+
+
+$group  //for grouping
+db.getCollection("employee").aggregate([{
+	$group:{
+		_id:"$name",
+		count: {$sum: 1}
+	}}
+])
+
+
+deleteOne()
+db.getCollection("employee").deletOne({_id: 728973498273})
+
+deleteMany()
+db.getCollection("employee").deleteMany({})

@@ -1,0 +1,174 @@
+//assigning vars
+let stringVar: string = 'Name'
+let numberVar: number = 25
+let boolVar: boolean  = true
+
+function add( a: number, b: number) {
+    return a + b
+}
+
+function concat(c: string) {
+    return ('Ssup ' + c)
+}
+
+console.log(add(80, 6))
+console.log(concat('Ben'))
+
+
+
+//enums
+enum Days {
+    Sunday,
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday
+}
+
+console.log(Days.Saturday)
+
+//array
+const days: number[] = [1,2,3,4,5]
+
+days.map((day) => {
+
+})
+
+
+
+
+
+
+Angular is a complete client side framework. It downloads the code in the browser and then runs it, it gets rendered on the browser locally in the browser. Doesn't refresh the page, the DOM is refreshed
+
+
+
+
+
+PS C:\Users\DELL\Documents\typescript> npm i -g @angular/cli
+
+added 232 packages in 12s
+
+44 packages are looking for funding
+  run `npm fund` for details       
+PS C:\Users\DELL\Documents\typescript> ng -help
+Error: You need to specify a command before moving on. Use '--help' to view the available commands.
+PS C:\Users\DELL\Documents\typescript> ng -help
+Error: You need to specify a command before moving on. Use '--help' to view the available commands.
+PS C:\Users\DELL\Documents\typescript> ng --help
+ng <command>
+
+Commands:
+  ng add <collection>            Adds support for an external library to your project.
+  ng analytics                   Configures the gathering of Angular CLI usage metrics.
+  ng build [project]             Compiles an Angular application or library into an output directory named
+                                 dist/ at the given output path.                               [aliases: b]  ng cache                       Configure persistent disk cache and retrieve cache statistics.
+  ng completion                  Set up Angular CLI autocompletion for your terminal.
+  ng config [json-path] [value]  Retrieves or sets Angular configuration values in the angular.json file   
+                                 for the workspace.
+  ng deploy [project]            Invokes the deploy builder for a specified project or for the default     
+                                 project in the workspace.
+  ng doc <keyword>               Opens the official Angular documentation (angular.io) in a browser, and   
+                                 searches for a given keyword.                                 [aliases: d]                                                                                               [aliases: e]  ng extract-i18n [project]      Extracts i18n messages from source code.
+  ng generate                    Generates and/or modifies files based on a schematic.         [aliases: g]  ng lint [project]              Runs linting tools on Angular application code in a given project folder. 
+  ng new [name]                  Creates a new Angular workspace.                              [aliases: n]  ng run <target>                Runs an Architect target with an optional custom builder configuration    
+                                 defined in your project.
+  ng serve [project]             Builds and serves your application, rebuilding on file changes.
+                                                                                               [aliases: s]  ng test [project]              Runs unit tests in a project.                                 [aliases: t]  ng update [packages..]         Updates your workspace and its dependencies. See
+                                 https://update.angular.io/.
+  ng version                     Outputs Angular CLI version.                                  [aliases: v]
+
+Options:
+  --help  Shows a help message for this command in the console.                                   [boolean]
+
+For more information, see https://angular.io/cli/.
+PS C:\Users\DELL\Documents\typescript> ng new angular_test
+? Would you like to share pseudonymous usage data about this project with the Angular Team
+at Google under Google's Privacy Policy at https://policies.google.com/privacy. For more  
+details and how to change this setting, see https://angular.io/analytics. Yes
+
+Thank you for sharing pseudonymous usage data. Should you change your mind, the following
+command will disable this feature entirely:
+
+    ng analytics disable --global
+
+Global setting: enabled
+Local setting: No local workspace configuration file.
+Effective status: enabled
+? Which stylesheet format would you like to use? CSS
+? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? Yes
+CREATE angular_test/angular.json (2868 bytes)
+CREATE angular_test/package.json (1281 bytes)
+CREATE angular_test/README.md (1092 bytes)   
+CREATE angular_test/tsconfig.json (936 bytes)
+CREATE angular_test/.editorconfig (290 bytes)
+CREATE angular_test/.gitignore (590 bytes)
+CREATE angular_test/tsconfig.app.json (342 bytes)
+CREATE angular_test/tsconfig.spec.json (287 bytes)
+CREATE angular_test/server.ts (1759 bytes)
+CREATE angular_test/.vscode/extensions.json (134 bytes)
+CREATE angular_test/.vscode/launch.json (490 bytes)
+CREATE angular_test/src/favicon.ico (15086 bytes)
+CREATE angular_test/src/styles.css (81 bytes)
+CREATE angular_test/src/main.server.ts (271 bytes)
+CREATE angular_test/src/app/app.component.html (20239 bytes)
+CREATE angular_test/src/app/app.component.spec.ts (963 bytes)
+CREATE angular_test/src/app/app.component.ts (321 bytes)
+CREATE angular_test/src/app/app.component.css (0 bytes)
+CREATE angular_test/src/app/app.config.ts (330 bytes)
+CREATE angular_test/src/app/app.routes.ts (80 bytes)
+CREATE angular_test/src/app/app.config.server.ts (361 bytes)
+CREATE angular_test/src/assets/.gitkeep (0 bytes)
+✔ Packages installed successfully.
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches 
+it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it   
+    Successfully initialized git.
+PS C:\Users\DELL\Documents\typescript> cd angular_test
+PS C:\Users\DELL\Documents\typescript\angular_test> ng serve -open
+Error: Unknown arguments: p, e, n
+PS C:\Users\DELL\Documents\typescript\angular_test> ng serve --open
+? Would you like to share pseudonymous usage data about this project with the Angular Team
+at Google under Google's Privacy Policy at https://policies.google.com/privacy. For more  
+details and how to change this setting, see https://angular.io/analytics. Yes
+
+Thank you for sharing pseudonymous usage data. Should you change your mind, the following
+command will disable this feature entirely:
+
+    ng analytics disable
+
+Global setting: enabled
+Local setting: enabled
+Effective status: enabled
+⠴ Building...
+Browser bundles        
+Initial chunk files     | Names               |  Raw size
+polyfills.js            | polyfills           |  83.60 kB |
+main.js                 | main                |  22.19 kB |
+styles.css              | styles              |  95 bytes |
+
+                        | Initial total       | 105.88 kB
+
+
+Server bundles
+Initial chunk files     | Names               |  Raw size
+chunk-CIHI3CEQ.mjs      | -                   |   1.69 MB |
+polyfills.server.mjs    | polyfills.server    | 555.05 kB |
+main.server.mjs         | main.server         | 214.75 kB |
+chunk-VPSODEBW.mjs      | -                   |   2.51 kB |
+render-utils.server.mjs | render-utils.server | 423 bytes |
+
+Lazy chunk files        | Names               |  Raw size
+chunk-OTT6LQ5K.mjs      | xhr2                |  39.10 kB |
+Application bundle generation complete. [5.730 seconds]
+Watch mode enabled. Watching for file changes...
+  ➜  Local:   http://localhost:4200/
+  ➜  press h + enter to show help
+
+
+
+
+Create a component
+ng generate component<component name>
